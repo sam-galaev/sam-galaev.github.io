@@ -1082,7 +1082,7 @@ main > section:nth-of-type(even) .location-photo {
 
   .location .section-header h2,
   .gift .section-header h2 {
-    font-size: clamp(1.8rem, 3.4vw + 0.45rem, 2.7rem);
+    font-size: clamp(1.65rem, 3vw + 0.4rem, 2.55rem);
   }
 
   .calendar-card {
