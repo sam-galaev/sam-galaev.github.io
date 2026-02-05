@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Свадьба Семёна и Ирины</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@300;400;500;600&family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="intro-locked">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="intro-overlay" id="intro-overlay" aria-hidden="false">
+      <div class="intro-half intro-top">
+        <img src="images/letter.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="intro-half intro-bottom">
+        <img src="images/letter.png" alt="" aria-hidden="true" />
+      </div>
+      <button class="intro-seal" id="intro-seal" type="button" aria-label="Открыть приглашение">
+        <img src="images/button.png" alt="" />
+      </button>
+    </div>
+    <main>
+      <section class="hero reveal" id="top">
+        <p class="hero-overtitle">Приглашение на&nbsp;свадьбу</p>
+        <h1 class="title">Семён и Ирина</h1>
+        <p class="hero-meta">03 июня 2026</p>
+        <div class="hero-divider" aria-hidden="true"></div>
+        <img class="hero-rings" src="images/rings.png" alt="Свадебные кольца" />
+      </section>
+
+      <section class="intro reveal" id="intro">
+        <header class="section-header">
+          <h2>Дорогие наши родные&nbsp;и&nbsp;близкие!</h2>
+        </header>
+        <div class="lead">
+          <p>С радостью приглашаем вас на наше свадебное торжество!</p>
+          <p>Мы будем рады видеть вас среди наших гостей, чтобы разделить радость, любовь и&nbsp;незабываемые моменты этого важного события!</p>
+        </div>
+      </section>
+
+      <section class="calendar-section reveal" id="calendar">
+        <header class="section-header">
+          <p class="section-label">Сохраните дату</p>
+          <h2>День нашей свадьбы</h2>
+          <p class="hero-meta">03 июня 2026</p>
+          <div class="hero-divider" aria-hidden="true"></div>
+          <p class="hero-meta">Начало в 16:00</p>
+        </header>
+        <div
+          class="calendar-card"
+          role="img"
+          aria-label="Календарь на июнь 2026 года с отмеченным сердечком 3 числом"
+        >
+          <div class="calendar-header">
+            <span class="calendar-month">Июнь,</span>
+            <span class="calendar-year">2026</span>
+          </div>
+          <div class="calendar-weekdays" aria-hidden="true">
+            <span>ПН</span>
+            <span>ВТ</span>
+            <span>СР</span>
+            <span>ЧТ</span>
+            <span>ПТ</span>
+            <span>СБ</span>
+            <span>ВС</span>
+          </div>
+          <div class="calendar-grid">
+            <span class="calendar-day">1</span>
+            <span class="calendar-day">2</span>
+            <span
+              class="calendar-day is-wedding"
+              aria-label="3 июня — день свадьбы"
+            >
+              <span class="day-number">3</span>
+              <img
+                class="calendar-heart"
+                src="images/heart.png"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+              />
+            </span>
+            <span class="calendar-day">4</span>
+            <span class="calendar-day">5</span>
+            <span class="calendar-day">6</span>
+            <span class="calendar-day">7</span>
+            <span class="calendar-day">8</span>
+            <span class="calendar-day">9</span>
+            <span class="calendar-day">10</span>
+            <span class="calendar-day">11</span>
+            <span class="calendar-day">12</span>
+            <span class="calendar-day">13</span>
+            <span class="calendar-day">14</span>
+            <span class="calendar-day">15</span>
+            <span class="calendar-day">16</span>
+            <span class="calendar-day">17</span>
+            <span class="calendar-day">18</span>
+            <span class="calendar-day">19</span>
+            <span class="calendar-day">20</span>
+            <span class="calendar-day">21</span>
+            <span class="calendar-day">22</span>
+            <span class="calendar-day">23</span>
+            <span class="calendar-day">24</span>
+            <span class="calendar-day">25</span>
+            <span class="calendar-day">26</span>
+            <span class="calendar-day">27</span>
+            <span class="calendar-day">28</span>
+            <span class="calendar-day">29</span>
+            <span class="calendar-day">30</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="details reveal location" id="details">
+        <header class="section-header centered">
+          <p class="section-label">Место проведения</p>
+          <h2>Экоотель «Маяк»</h2>
+        </header>
+        <div class="location-map" aria-label="Карта проезда к Экоотелю «Маяк»">
+          <div class="map-embed map-desktop">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ed8294ea330322de874974d165e3690a2fda1e0ddd5c39c8a2a671bffcc742e&amp;width=700&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
+          <div class="map-embed map-mobile">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ed8294ea330322de874974d165e3690a2fda1e0ddd5c39c8a2a671bffcc742e&amp;width=350&amp;height=240&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
+        </div>
+        <a
+          class="btn map-btn"
+          href="https://yandex.ru/maps/-/CPEAu043"
+          target="_blank"
+          rel="noopener"
+        >
+          <img class="map-btn-logo" src="images/yandex-maps.png" alt="" />
+          Открыть в Яндекс Картах
+        </a>
+        <p class="location-address">
+          Самарская область,<br>Ставропольский район,<br>сельское поселение
+          Васильевка,<br>территория База отдыха Маяк, 1
+        </p>
+        <p class="location-address">
+          Большой зал
+        </p>
+      </section>
+
+      <section class="schedule reveal" id="schedule">
+        <header class="section-header">
+          <p class="section-label">Тайминг</p>
+          <h2>Программа вечера</h2>
+        </header>
+        <ul class="timeline">
+          <li>
+            <span class="time">16:00</span>
+            <div class="event">
+              <p class="event-title">Сбор гостей</p>
+              <p class="event-note">Приветственные напитки и&nbsp;музыка.</p>
+            </div>
+          </li>
+          <li>
+            <span class="time">16:30</span>
+            <div class="event">
+              <p class="event-title">Церемония</p>
+              <p class="event-note">Самые трогательные минуты дня.</p>
+            </div>
+          </li>
+          <li>
+            <span class="time">17:00</span>
+            <div class="event">
+              <p class="event-title">Начало банкета</p>
+              <p class="event-note">Праздничный ужин и тосты.</p>
+            </div>
+          </li>
+          <li>
+            <span class="time">22:00</span>
+            <div class="event">
+              <p class="event-title">Дискотека</p>
+              <p class="event-note">Танцы и любимые треки.</p>
+            </div>
+          </li>
+          <li>
+            <span class="time">23:00</span>
+            <div class="event">
+              <p class="event-title">Завершение банкета</p>
+              <p class="event-note">Спасибо за этот вечер!</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="dress-code reveal" id="dress-code">
+        <header class="section-header">
+          <p class="section-label">Дресс-код</p>
+          <h2>Цветовая палитра</h2>
+        </header>
+        <div class="swatches">
+          <img class="swatch-image" src="images/burgundy.png" alt="Бордовый" />
+          <img class="swatch-image" src="images/beige.png" alt="Бежевый" />
+          <img class="swatch-image" src="images/brown.png" alt="Коричневый" />
+        </div>
+        <div class="gallery" aria-label="Примеры образов">
+          <img class="gallery-image" src="images/girls2.jpeg" alt="Образ девушки 1" />
+          <img class="gallery-image" src="images/girls3.jpg" alt="Образ девушки 2" />
+          <img class="gallery-image" src="images/girls1.jpg" alt="Образ девушки 3" />
+          <img class="gallery-image" src="images/boys2.jpeg" alt="Образ мужчины 1" />
+          <img class="gallery-image" src="images/boys1.jpg" alt="Образ мужчины 2" />
+          <img class="gallery-image" src="images/boys3.jpg" alt="Образ мужчины 3" />
+        </div>
+        <p class="dress-note">
+          Мы старались продумать атмосферу праздника до&nbsp;мелочей.<br>
+          <br>
+          Нам будет особенно приятно, если в своих нарядах вы поддержите общую
+          цветовую гамму нашего торжества.
+        </p>
+      </section>
+
+      <section class="notice reveal" id="notice">
+        <header class="section-header">
+          <p class="section-label">Важно</p>
+          <h2>Формат праздника</h2>
+        </header>
+        <div class="notice-card">
+          <p>Свадьба проходит в формате без детей младше 14 лет.</p>
+        </div>
+      </section>
+
+      <section class="gift reveal" id="gift">
+        <header class="section-header">
+          <h2>Ваше внимание — лучшая благодарность</h2>
+        </header>
+        <p class="gift-text">
+          Мы очень ценим вашу заботу и будем рады любому&nbsp;подарку!<br>
+          <br>
+          И не важно в какой конверт вы&nbsp;его&nbsp;упакуете!<br>
+          <br>
+          Знаем, что на свадьбах принято дарить цветы, но мы просим вас
+          обойтись без них — мы просто не&nbsp;успеем насладиться их&nbsp;красотой.<br>
+          <br>
+          Вместо них запоминающимся подарком будет интересная майка, толстовка
+          (или другая вещь) — выбранные или оформленные вами от души.<br>
+          <br>
+          Они точно не завянут и останутся с&nbsp;нами&nbsp;надолго.<br>
+          <br>
+          Размеры:<br>Невеста — M, Жених — XXL
+        </p>
+      </section>
+
+      <section class="rsvp reveal" id="rsvp">
+        <header class="section-header">
+          <p class="section-label">Анкета</p>
+          <h2>Подтвердите ваше&nbsp;присутствие</h2>
+        </header>
+        <form id="rsvp-form" class="form">
+          <div class="field-grid">
+            <label class="field">
+              <span>Ваше имя</span>
+              <input type="text" name="first_name" required />
+            </label>
+            <label class="field">
+              <span>Ваша фамилия</span>
+              <input type="text" name="last_name" required />
+            </label>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend>Сможете ли присутствовать?</legend>
+            <label class="option">
+              <input
+                type="radio"
+                name="attendance"
+                value="С удовольствием приду"
+                required
+              />
+              <span>С удовольствием приду</span>
+            </label>
+            <label class="option">
+              <input
+                type="radio"
+                name="attendance"
+                value="Буду со своей парой"
+                required
+              />
+              <span>Буду со своей парой</span>
+            </label>
+            <label class="option">
+              <input
+                type="radio"
+                name="attendance"
+                value="Не смогу присутствовать"
+                required
+              />
+              <span>Не смогу присутствовать</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Готовы продолжить на втором дне?</legend>
+            <label class="option">
+              <input
+                type="radio"
+                name="second_day"
+                value="С радостью!"
+                required
+              />
+              <span>С радостью!</span>
+            </label>
+            <label class="option">
+              <input
+                type="radio"
+                name="second_day"
+                value="К сожалению, не смогу"
+                required
+              />
+              <span>К сожалению, не смогу</span>
+            </label>
+          </fieldset>
+
+          <div id="pair-fields" class="field-grid pair-fields" aria-hidden="true">
+            <label class="field">
+              <span>Имя пары</span>
+              <input type="name" name="partner_first_name" />
+            </label>
+            <label class="field">
+              <span>Фамилия пары</span>
+              <input type="name" name="partner_last_name" />
+            </label>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend>Предпочтения по&nbsp;напиткам (можно&nbsp;несколько)</legend>
+            <div class="option-grid">
+              <label class="option">
+                <input type="checkbox" value="Вино красное полусладкое" data-group="drinks" />
+                <span>Вино красное полусладкое</span>
+              </label>
+              <label class="option">
+                <input type="checkbox" value="Вино красное полусухое" data-group="drinks" />
+                <span>Вино красное полусухое</span>
+              </label>
+              <label class="option">
+                <input type="checkbox" value="Вино белое полусладкое" data-group="drinks" />
+                <span>Вино белое полусладкое</span>
+              </label>
+              <label class="option">
+                <input type="checkbox" value="Вино белое полусухое" data-group="drinks" />
+                <span>Вино белое полусухое</span>
+              </label>
+              <label class="option">
+                <input type="checkbox" value="Шампанское" data-group="drinks" />
+                <span>Шампанское</span>
+              </label>
+              <label class="option">
+                <input type="checkbox" value="Водка" data-group="drinks" />
+                <span>Водка</span>
+              </label>
+              <label class="option">
+                <input type="checkbox" value="Виски" data-group="drinks" />
+                <span>Виски</span>
+              </label>
+              <label class="option">
+                <input type="checkbox" value="Коньяк" data-group="drinks" />
+                <span>Коньяк</span>
+              </label>
+              <label class="option">
+                <input type="checkbox" value="Безалкогольные напитки" data-group="drinks" />
+                <span>Безалкогольные напитки</span>
+              </label>
+            </div>
+            <input type="hidden" name="drinks" id="drinks-field" />
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Предпочтения по&nbsp;еде (можно&nbsp;несколько)</legend>
+            <div class="option-grid">
+              <label class="option">
+                <input type="checkbox" value="Мясо" data-group="food" />
+                <span>Мясо</span>
+              </label>
+              <label class="option">
+                <input type="checkbox" value="Птица" data-group="food" />
+                <span>Птица</span>
+              </label>
+              <label class="option">
+                <input type="checkbox" value="Рыба" data-group="food" />
+                <span>Рыба</span>
+              </label>
+            </div>
+            <input type="hidden" name="food" id="food-field" />
+          </fieldset>
+
+          <label class="field">
+            <span>Аллергии</span>
+            <textarea name="allergy" rows="3" placeholder="Напишите, если есть"></textarea>
+          </label>
+
+          <button type="submit" class="btn">Отправить ответ</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="contacts reveal" id="contacts">
+        <header class="section-header">
+          <p class="section-label">Контакты</p>
+          <h2>Для любых вопросов</h2>
+        </header>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <p class="contact-role">Организатор</p>
+            <p class="contact-name">Александра</p>
+            <a class="contact-link" href="tel:+79649842004">+7 (964) 984-20-04</a>
+          </article>
+          <article class="contact-card">
+            <p class="contact-role">Жених</p>
+            <p class="contact-name">Семён</p>
+            <a class="contact-link" href="tel:+79177198877">+7 (917) 719-88-77</a>
+          </article>
+          <article class="contact-card">
+            <p class="contact-role">Невеста</p>
+            <p class="contact-name">Ирина</p>
+            <a class="contact-link" href="tel:+79270032005">+7 (927) 003-20-05</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Закрыть">
+        ×
+      </button>
+      <div class="lightbox-controls" role="group" aria-label="Масштаб">
+        <button class="lightbox-btn" type="button" data-zoom="out" aria-label="Уменьшить">
+          −
+        </button>
+        <button class="lightbox-btn" type="button" data-zoom="in" aria-label="Увеличить">
+          +
+        </button>
+      </div>
+      <img class="lightbox-image" alt="" />
+    </div>
+
+    <footer class="footer">
+      <p>С любовью, Семён и Ирина</p>
+    </footer>
+
+    <audio id="bg-audio" preload="auto" playsinline aria-hidden="true">
+      <source
+        src="audio/nothing_gonna_change_my_love_for_you.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
