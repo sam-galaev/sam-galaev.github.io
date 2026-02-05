@@ -1006,14 +1006,17 @@ main > section:nth-of-type(even) .location-photo {
   height: 44px;
   border-radius: 50%;
   border: none;
+  padding: 0;
   background: rgba(255, 255, 255, 0.9);
   color: #222;
   font-size: 1.6rem;
   cursor: pointer;
   z-index: 2;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: 1;
+  text-align: center;
 }
 
 .lightbox-controls {
@@ -1031,13 +1034,16 @@ main > section:nth-of-type(even) .location-photo {
   height: 44px;
   border-radius: 50%;
   border: none;
+  padding: 0;
   background: rgba(255, 255, 255, 0.92);
   color: #222;
   font-size: 1.4rem;
   cursor: pointer;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: 1;
+  text-align: center;
 }
 
 .reveal {
@@ -1076,7 +1082,7 @@ main > section:nth-of-type(even) .location-photo {
 
   .location .section-header h2,
   .gift .section-header h2 {
-    font-size: clamp(1.95rem, 3.8vw + 0.5rem, 2.9rem);
+    font-size: clamp(1.8rem, 3.4vw + 0.45rem, 2.7rem);
   }
 
   .calendar-card {
