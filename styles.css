@@ -1080,9 +1080,9 @@ main > section:nth-of-type(even) .location-photo {
     gap: 0;
   }
 
-  .location .section-header h2,
-  .gift .section-header h2 {
-    font-size: clamp(1.65rem, 3vw + 0.4rem, 2.55rem);
+  main > section.location .section-header h2,
+  main > section.gift .section-header h2 {
+    font-size: clamp(2.7rem, 6vw + 1.1rem, 4.2rem);
   }
 
   .calendar-card {
