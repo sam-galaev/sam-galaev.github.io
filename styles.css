@@ -1011,6 +1011,9 @@ main > section:nth-of-type(even) .location-photo {
   font-size: 1.6rem;
   cursor: pointer;
   z-index: 2;
+  display: grid;
+  place-items: center;
+  line-height: 1;
 }
 
 .lightbox-controls {
@@ -1032,6 +1035,9 @@ main > section:nth-of-type(even) .location-photo {
   color: #222;
   font-size: 1.4rem;
   cursor: pointer;
+  display: grid;
+  place-items: center;
+  line-height: 1;
 }
 
 .reveal {
@@ -1070,7 +1076,7 @@ main > section:nth-of-type(even) .location-photo {
 
   .location .section-header h2,
   .gift .section-header h2 {
-    font-size: clamp(2.1rem, 4.2vw + 0.6rem, 3.1rem);
+    font-size: clamp(1.95rem, 3.8vw + 0.5rem, 2.9rem);
   }
 
   .calendar-card {
