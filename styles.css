@@ -372,11 +372,6 @@ main > section:not(:first-of-type) .section-header h2 {
   font-family: var(--font-script);
 }
 
-.location .section-header h2,
-.gift .section-header h2 {
-  font-size: clamp(2.15rem, 3.3vw + 0.9rem, 3.6rem);
-}
-
 main > section:nth-of-type(even) .section-label {
   color: rgba(247, 241, 233, 0.75);
 }
@@ -1075,7 +1070,7 @@ main > section:nth-of-type(even) .location-photo {
 
   .location .section-header h2,
   .gift .section-header h2 {
-    font-size: clamp(2.25rem, 4.6vw + 0.7rem, 3.4rem);
+    font-size: clamp(2.1rem, 4.2vw + 0.6rem, 3.1rem);
   }
 
   .calendar-card {

@@ -188,15 +188,30 @@ if (introSeal && introOverlay) {
 }
 
 if (bgAudio) {
-  const handleVisibilityChange = () => {
-    if (document.hidden) {
+  const pauseAudio = () => {
+    if (!bgAudio.paused) {
       bgAudio.pause();
-    } else if (bgAudio.paused && document.body.classList.contains("intro-open")) {
+    }
+  };
+
+  const resumeAudio = () => {
+    if (document.hidden) return;
+    if (document.body.classList.contains("intro-open")) {
       bgAudio.play().catch(() => {});
     }
   };
 
-  document.addEventListener("visibilitychange", handleVisibilityChange);
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      pauseAudio();
+    } else {
+      resumeAudio();
+    }
+  });
+  window.addEventListener("pagehide", pauseAudio);
+  window.addEventListener("blur", pauseAudio);
+  window.addEventListener("focus", resumeAudio);
+  window.addEventListener("pageshow", resumeAudio);
 
   bgAudio.addEventListener("ended", () => {
     startAudioFrom(48);
