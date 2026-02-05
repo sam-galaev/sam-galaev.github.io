@@ -374,7 +374,7 @@ main > section:not(:first-of-type) .section-header h2 {
 
 .location .section-header h2,
 .gift .section-header h2 {
-  font-size: clamp(2.3rem, 3.6vw + 1rem, 3.8rem);
+  font-size: clamp(2.15rem, 3.3vw + 0.9rem, 3.6rem);
 }
 
 main > section:nth-of-type(even) .section-label {
@@ -1075,7 +1075,7 @@ main > section:nth-of-type(even) .location-photo {
 
   .location .section-header h2,
   .gift .section-header h2 {
-    font-size: clamp(2.4rem, 5vw + 0.8rem, 3.6rem);
+    font-size: clamp(2.25rem, 4.6vw + 0.7rem, 3.4rem);
   }
 
   .calendar-card {

@@ -188,6 +188,16 @@ if (introSeal && introOverlay) {
 }
 
 if (bgAudio) {
+  const handleVisibilityChange = () => {
+    if (document.hidden) {
+      bgAudio.pause();
+    } else if (bgAudio.paused && document.body.classList.contains("intro-open")) {
+      bgAudio.play().catch(() => {});
+    }
+  };
+
+  document.addEventListener("visibilitychange", handleVisibilityChange);
+
   bgAudio.addEventListener("ended", () => {
     startAudioFrom(48);
   });
